@@ -16,7 +16,7 @@ public class LoginForm extends JDialog {
         super(parent);
         setTitle("Login");
         setContentPane(panel1);
-        setMinimumSize(new Dimension(450, 474));
+        setMinimumSize(new Dimension(900, 500));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -31,7 +31,7 @@ public class LoginForm extends JDialog {
 
                 if (user!=null){
                     dispose();
-                    
+
                 }
                 else{
                     JOptionPane.showMessageDialog(LoginForm.this,
@@ -103,8 +103,12 @@ public class LoginForm extends JDialog {
         LoginForm loginForm = new LoginForm(null);
         Users user= loginForm.user;
         if (user != null) {
-            System.out.println("Successful Authentication of: " + user.RegNum);
-            System.out.println("Student Name: " + user.Name);
+            JOptionPane.showMessageDialog(null,
+                    "Successful Authentication of: " + user.RegNum + " - Student Name: " + user.Name);
+
+
+            //System.out.println("Successful Authentication of: " + user.RegNum);
+            //System.out.println("Student Name: " + user.Name);
         }
         else{
             System.out.println("Authentication canceled");
