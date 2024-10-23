@@ -64,7 +64,7 @@
         </constraints>
         <properties>
           <font name="Consolas" size="14"/>
-          <foreground color="-74601"/>
+          <foreground color="-16777216"/>
         </properties>
       </component>
       <component id="52922" class="javax.swing.JTextField" binding="tfreg">
@@ -75,7 +75,7 @@
         </constraints>
         <properties>
           <font name="Consolas" size="14"/>
-          <foreground color="-74601"/>
+          <foreground color="-16777216"/>
         </properties>
       </component>
       <component id="a1e9a" class="javax.swing.JPasswordField" binding="pfpass">
@@ -86,7 +86,7 @@
         </constraints>
         <properties>
           <font name="Consolas" size="14"/>
-          <foreground color="-74601"/>
+          <foreground color="-16777216"/>
         </properties>
       </component>
       <component id="493fd" class="javax.swing.JLabel">
@@ -106,7 +106,7 @@
         </constraints>
         <properties>
           <font name="Consolas" size="14"/>
-          <foreground color="-74601"/>
+          <foreground color="-16777216"/>
         </properties>
       </component>
       <component id="e9a8d" class="javax.swing.JButton" binding="btncancel">

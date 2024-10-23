@@ -54,7 +54,7 @@ public class RegistrationForm extends JDialog{
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if (pass.equals(confirmpass)) {
+        if (!pass.equals(confirmpass)) {
             JOptionPane.showMessageDialog(this,
                     "Passwords do not match",
                     "Try again",
@@ -114,7 +114,8 @@ public class RegistrationForm extends JDialog{
         RegistrationForm myform =new RegistrationForm(null);
         Users user=myform.user;
         if(user!=null){
-            System.out.println("Succesful registration of : "+user.Name);
+            JOptionPane.showMessageDialog(null,"Succesful registration of : "+user.Name);
+           // System.out.println("Succesful registration of : "+user.Name);
 
         }else{
             System.out.println("Failed registration of : "+user.Name);

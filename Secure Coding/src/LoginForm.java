@@ -57,6 +57,7 @@ public class LoginForm extends JDialog {
 
 
 
+
             }
         });
     }
@@ -103,6 +104,7 @@ public class LoginForm extends JDialog {
         LoginForm loginForm = new LoginForm(null);
         Users user= loginForm.user;
         if (user != null) {
+
             JOptionPane.showMessageDialog(null,
                     "Successful Authentication of: " + user.RegNum + " - Student Name: " + user.Name);
 
